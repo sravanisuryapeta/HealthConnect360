@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outreach_Visit_Date_Validation</fullName>
+    <active>true</active>
+    <description>Prevents recording an outreach visit with a future visit date.</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(Visit_Date__c)),
+    Visit_Date__c &gt; TODAY()
+)</errorConditionFormula>
+    <errorDisplayField>Visit_Date__c</errorDisplayField>
+    <errorMessage>Visit Date cannot be in the future.</errorMessage>
+</ValidationRule>

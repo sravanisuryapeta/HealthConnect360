@@ -1,0 +1,42 @@
+<template>
+    <lightning-card title="HealthConnect 360 - Care Gap Dashboard"
+                    icon-name="standard:dashboard">
+
+        <div class="slds-p-around_medium">
+            <template if:true={metrics.length}>
+                <div class="slds-grid slds-wrap slds-gutters">
+
+                    <template for:each={metrics} for:item="metric">
+                        <div key={metric.label}
+                             class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-3 slds-p-bottom_medium">
+
+                            <div class="slds-box slds-theme_default">
+                                <p class="slds-text-title_caps">
+                                    {metric.label}
+                                </p>
+                                <p class="slds-text-heading_large">
+                                    {metric.value}
+                                </p>
+                            </div>
+
+                        </div>
+                    </template>
+
+                </div>
+            </template>
+
+            <template if:false={metrics.length}>
+                <p class="slds-text-color_weak">
+                    Loading care gap analytics...
+                </p>
+            </template>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">
+                    Unable to load care gap analytics. Check Apex access and browser errors.
+                </p>
+            </template>
+        </div>
+
+    </lightning-card>
+</template>

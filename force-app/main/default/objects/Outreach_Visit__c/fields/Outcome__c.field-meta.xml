@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome__c</fullName>
+    <label>Outcome</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reached - Scheduled</fullName>
+                <default>false</default>
+                <label>Reached - Scheduled</label>
+            </value>
+            <value>
+                <fullName>Reached - Declined</fullName>
+                <default>false</default>
+                <label>Reached - Declined</label>
+            </value>
+            <value>
+                <fullName>No Answer</fullName>
+                <default>false</default>
+                <label>No Answer</label>
+            </value>
+            <value>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+                <label>Wrong Number</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Reached</fullName>
+                <default>false</default>
+                <label>Reached</label>
+            </value>
+            <value>
+                <fullName>Visit Completed</fullName>
+                <default>false</default>
+                <label>Visit Completed</label>
+            </value>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>Rescheduled</fullName>
+                <default>false</default>
+                <label>Rescheduled</label>
+            </value>
+            <value>
+                <fullName>Referred to Doctor</fullName>
+                <default>false</default>
+                <label>Referred to Doctor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
